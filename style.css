@@ -1,7 +1,9 @@
 /* WCMGA23 styles */
 
-.entry-title{
+/* import components */
 
-	color:#FF3944!important;
-	
-}
+@import "components/header.css";
+
+/* import pages */
+
+@import "pages/home.css";
