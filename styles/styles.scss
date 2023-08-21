@@ -1,5 +1,10 @@
 /* WCMGA23 styles */
 
+/* import globals */
+
+@import "vars.scss";
+@import "global.scss";
+
 /* import components */
 
 @import "components/header.scss";
