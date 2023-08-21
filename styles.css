@@ -1,9 +1,2 @@
-/* WCMGA23 styles */
-
-/* import components */
-
-@import "components/header.css";
-
-/* import pages */
-
-@import "pages/home.css";
+header#site-header{background:#141414!important}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvX2hlYWRlci5zY3NzIiwic3R5bGVzLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQSxtQkFDQyw0QkNFRCIsImZpbGUiOiJzdHlsZXMuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogaGVhZGVyICovXG5cbmhlYWRlciNzaXRlLWhlYWRlcntcblx0YmFja2dyb3VuZDogIzE0MTQxNCFpbXBvcnRhbnQ7XG59XG5cbiIsIi8qIFdDTUdBMjMgc3R5bGVzICovXG4vKiBpbXBvcnQgY29tcG9uZW50cyAqL1xuLyogaGVhZGVyICovXG5oZWFkZXIjc2l0ZS1oZWFkZXIge1xuICBiYWNrZ3JvdW5kOiAjMTQxNDE0ICFpbXBvcnRhbnQ7XG59XG5cbi8qIGltcG9ydCBwYWdlcyAqLyJdfQ== */
