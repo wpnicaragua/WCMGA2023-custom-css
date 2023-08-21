@@ -1,0 +1,31 @@
+{
+  "name": "WCMGA23",
+  "version": "1.0.0",
+  "description": "README.md",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wpnicaragua/WCMGA2023-custom-css"
+  },
+  "author": "Comunidad WordPress Managua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wpnicaragua/WCMGA2023-custom-css/issues"
+  },
+  "homepage": "https://github.com/wpnicaragua/WCMGA2023-custom-css#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "cssnano": "^5.0.8",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.38.0"
+  }
+}
