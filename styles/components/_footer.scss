@@ -72,6 +72,7 @@ div#wm-footer{
                             letter-spacing: 1px;
                             text-transform: capitalize;
                             border-radius: 100px !important;
+                            content: "enviar" !important;
 
                         }
                     }
@@ -113,7 +114,7 @@ div#wm-footer{
             {
                 a{
                     font-family: $font-wordcamp;
-                    font-size: 1.8rem;
+                    font-size: 1.5rem;
                     font-weight: 600;
                     color: $white;
                    
@@ -129,17 +130,27 @@ div#wm-footer{
 
         .wp-block-social-links{
             align-items: center;
-            li{
+            .wp-social-link-instagram{
+                background-color: transparent;
                 a{
                     svg{
                         width: 16px;
                         height: 16px;
-                        path{
-                            stroke: $white;
-                            fill: $white;
-                        }
+                        
                     }
                 }
+            }
+            .wp-social-link-facebook{
+                @extend .wp-social-link-instagram;
+            }
+            .wp-social-link-linkedin{
+                @extend .wp-social-link-instagram;
+            }
+            .wp-social-link-twitter{
+                @extend .wp-social-link-instagram;
+            }
+            .wp-social-link-meetup {
+                @extend .wp-social-link-instagram;
             }
         }
     
