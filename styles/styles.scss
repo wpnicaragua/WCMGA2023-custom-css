@@ -2,12 +2,13 @@
 
 /* import globals */
 
-@import "vars.scss";
-@import "global.scss";
+@import "vars/vars.scss";
+@import "vars/global.scss";
 
 /* import components */
 
 @import "components/header.scss";
+@import "components/footer.scss";
 
 /* import pages */
 
