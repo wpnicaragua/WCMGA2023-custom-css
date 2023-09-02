@@ -1,0 +1,209 @@
+
+/* @mixin desktop_button{
+    @media screen and (max-width: 768px) {
+       @content
+    }
+} */
+
+
+.header-footer-group {
+
+    background-color: $black !important;
+    color: $white;
+
+}
+
+.footer-widgets-wrapper{
+    div.footer-widgets{
+        width: 100%;
+        
+    }
+}
+
+div#wm-footer{
+    
+    div.wp-block-group__inner-container{
+        div.wp-container-37{
+            max-width: 80vw !important;
+            display: flex;
+            font-family:$font-wordcamp ;
+            background-color: $red;
+            padding: 6rem;
+            
+
+            h2{
+                font-size: 3.8rem;
+                font-weight: 600;
+                color: $white;
+                margin-bottom: 0px;
+                line-height: 50px;
+                letter-spacing: 1px;
+            }
+
+            p{
+                font-size: 1.5rem;
+                font-weight: 400;
+                font-style: normal;
+                color: $white;
+                line-height:2.8rem;
+                letter-spacing: 1px;
+            }
+
+            .wp-block-jetpack-subscriptions__container{
+                // width: 100%;
+                height: 5rem;
+                #subscribe-blog-1{
+                    align-items: stretch;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 5px;
+                    #subscribe-email{
+
+                       margin: 0;
+                        input[type="email"]{
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                            color: $black;
+                            line-height:2.8rem;
+                            letter-spacing: 1px;
+                            border-radius: 100px !important;
+                        }
+                    }
+                    #subscribe-submit{
+                        display: flex;
+                        align-content: center;
+                        align-items: stretch;
+                        align-content: stretch;
+                        .wp-block-button__link{
+                            align-self: stretch;
+                            text-align: center;
+                            font-size: 1.6rem;
+                            color: $black;
+                            font-style: normal;
+                            background-color: $yellow;
+                            font-weight: 600;
+                            line-height: 20px;
+                            letter-spacing: 1px;
+                            text-transform: capitalize;
+                            border-radius: 100px !important;
+                            margin-left:0px !important;
+                            padding: 10px 30px !important;
+                        
+                        }
+       
+                       
+                          
+                    }
+                    @media (min-width:768px) {
+                        #subscribe-submit{
+                            max-width: 30% !important;
+                            width:30% !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .wp-block-image{
+            figure{
+                .wp-image-190{
+                    width: 13rem !important;
+                    aspect-ratio: 3/4;
+                }
+    
+            }
+          
+        }
+
+        div.wp-container-40{
+            align-items: center;
+            gap: 10px;
+            align-self: center;
+            padding: 0px;
+            margin: 0 auto;
+            .wp-block-image{
+                margin: 0;
+            }
+        }
+
+    }
+
+    #menu-wordcam-menu-3{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+       
+        li.menu-item
+            {
+                a{
+                    font-family: $font-wordcamp;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: $white;
+                   
+                }
+                a:hover{
+      
+                        color: $red !important;
+
+                }
+            }
+           
+        }
+
+        .footer-widgets, .widget{
+            margin-top: 20px;
+        }
+
+        .wp-block-social-links{
+            align-items: center;
+            .wp-social-link-instagram{
+                background-color: transparent;
+                a{
+                    svg{
+                        width: 16px;
+                        height: 16px;
+                        
+                    }
+                }
+            }
+            .wp-social-link-facebook{
+                @extend .wp-social-link-instagram;
+            }
+            .wp-social-link-linkedin{
+                @extend .wp-social-link-instagram;
+            }
+            .wp-social-link-twitter{
+                @extend .wp-social-link-instagram;
+            }
+            .wp-social-link-meetup {
+                @extend .wp-social-link-instagram;
+            }
+        }
+    
+}
+
+footer{
+
+        .privacy-policy, .powered-by-wordpress,  .to-the-top{
+           
+                color: $white;
+        }
+
+        .to-the-top-long {
+
+            .arrow{
+                background-color: $yellow;
+                color: $black;
+                border-radius: 50%;
+            }
+           
+        }
+  
+}
+
+
+
+
