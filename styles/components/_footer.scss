@@ -1,9 +1,9 @@
 
-@mixin desktop_button{
+/* @mixin desktop_button{
     @media screen and (max-width: 768px) {
        @content
     }
-}
+} */
 
 
 .header-footer-group {
@@ -89,18 +89,17 @@ div#wm-footer{
                             border-radius: 100px !important;
                             margin-left:0px !important;
                             padding: 10px 30px !important;
-                    
-                            @include desktop_button(){
-                                max-width: 100% !important;
-                                width: 100vw !important;
-                            }
                         
                         }
-                        @include desktop_button(){
-                            max-width: 100% !important;
-                            width: v !important;
+       
+                       
+                          
+                    }
+                    @media (min-width:768px) {
+                        #subscribe-submit{
+                            max-width: 30% !important;
+                            width:30% !important;
                         }
-                        
                     }
                 }
             }
@@ -204,8 +203,6 @@ footer{
         }
   
 }
-
-
 
 
 
