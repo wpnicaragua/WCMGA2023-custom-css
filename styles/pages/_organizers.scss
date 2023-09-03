@@ -1,0 +1,55 @@
+.page-id-12{
+
+    hr.wp-block-separator.has-css-opacity.is-style-wide {
+        display: none;
+    }
+
+    .entry-content{
+        padding: 2rem 0rem;
+        .wp-block-query{
+            max-width: 90%!important;
+            width: calc(100% - 4rem);
+        }
+
+        .wp-block-post-template{
+            display:grid;
+            grid-template-columns: 1fr;
+
+            @media screen and (min-width: 768px){
+             grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            hr{
+                display: none;
+            }
+
+            .wcb_organizer{
+                
+                .wp-block-columns{
+                    background: red;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    gap:0em;
+                    
+                    .wp-block-column{
+                        align-self: center;
+                        text-align: center;
+                    }
+                    .wp-block-spacer{
+                        display: none;
+                    }
+                }
+            }
+
+
+            hr{
+                display: none;
+
+            }
+            
+        }
+    }
+
+}
