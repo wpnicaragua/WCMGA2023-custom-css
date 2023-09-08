@@ -29,7 +29,7 @@
 div#wm-footer{
     
     div.wp-block-group__inner-container{
-        div.wp-container-37{
+        div.wm-newsletter{
             max-width: 80vw !important;
             display: flex;
             font-family:$font-wordcamp ;
@@ -109,13 +109,13 @@ div#wm-footer{
           
         }
 
-        div.wp-container-40{
+        div.wm-custom-copy{
             align-items: center;
             align-self: center;
             padding: 0px;
             margin: 0 auto;
             .wp-block-column:nth-child(odd){
-                flex-basis:20% !important;
+                flex-basis:15% !important;
             }
             .wp-block-column:nth-child(even){
                 justify-content: flex-start;
@@ -193,12 +193,9 @@ div#wm-footer{
 
 footer{
 
-        .privacy-policy, .powered-by-wordpress,  .to-the-top{
-           
+        .privacy-policy, .powered-by-wordpress,  .to-the-top{        
                 color: $white;
         }
-
-
 
     .arrow{
             background-color: $yellow;
