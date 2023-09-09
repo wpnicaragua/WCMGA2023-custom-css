@@ -207,9 +207,10 @@ footer{
     }
   
 }
+
 .footer-copyright{
-    visibility: hidden;
-    width: 0px;
+    visibility: inherit;
+    width: auto;
     margin: 0px;
     padding: 0px;
 }
@@ -324,4 +325,6 @@ footer{
     }
    @include footer-menu-wide();
 }
+
+
 
