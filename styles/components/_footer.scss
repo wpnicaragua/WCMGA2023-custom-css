@@ -67,14 +67,16 @@ div#wm-footer{
 
                        margin: 0;
                         input[type="email"]{
-                            font-size: 1.8rem;
+                            font-size: 1.8rem!important;
                             font-weight: 400;
+                            height: 80%;
                             color: $black;
                             line-height:2.8rem;
-                            letter-spacing: 1px;
+                            letter-spacing: 0.5px;
                             border-radius: 100px !important;
                         }
                     }
+
                     #subscribe-submit{
                         
                         .wp-block-button__link{
@@ -83,7 +85,7 @@ div#wm-footer{
                             font-size: 1.6rem;
                             color: $black;
                             font-style: normal;
-                            background-color: $yellow;
+                            background-color: $yellow!important;
                             font-weight: 600;
                             line-height: 20px;
                             letter-spacing: 1px;
@@ -207,9 +209,10 @@ footer{
     }
   
 }
+
 .footer-copyright{
-    visibility: hidden;
-    width: 0px;
+    visibility: inherit;
+    width: auto;
     margin: 0px;
     padding: 0px;
 }
@@ -324,4 +327,6 @@ footer{
     }
    @include footer-menu-wide();
 }
+
+
 
