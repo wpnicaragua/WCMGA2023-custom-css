@@ -69,12 +69,14 @@ div#wm-footer{
                         input[type="email"]{
                             font-size: 1.8rem!important;
                             font-weight: 400;
+                            height: 80%;
                             color: $black;
                             line-height:2.8rem;
-                            letter-spacing: 1px;
+                            letter-spacing: 0.5px;
                             border-radius: 100px !important;
                         }
                     }
+
                     #subscribe-submit{
                         
                         .wp-block-button__link{
