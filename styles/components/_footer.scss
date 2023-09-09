@@ -1,10 +1,16 @@
 
-/* @mixin desktop_button{
-    @media screen and (max-width: 768px) {
-       @content
-    }
-} */
+@mixin footer-menu-wide(){
+    #menu-wm-footer{
+        gap: 20px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .menu-item{     
+            font-size: 1.6rem;
+            line-height: 2rem; 
+        }
 
+    }
+}
 
 .header-footer-group {
 
@@ -23,14 +29,14 @@
 div#wm-footer{
     
     div.wp-block-group__inner-container{
-        div.wp-container-37{
+        div.wm-newsletter{
             max-width: 80vw !important;
             display: flex;
             font-family:$font-wordcamp ;
             background-color: $red;
-            padding: 6rem;
+            padding: 2.4rem;
+            justify-content: center;
             
-
             h2{
                 font-size: 3.8rem;
                 font-weight: 600;
@@ -50,8 +56,7 @@ div#wm-footer{
             }
 
             .wp-block-jetpack-subscriptions__container{
-                // width: 100%;
-                height: 5rem;
+       
                 #subscribe-blog-1{
                     align-items: stretch;
                     display: flex;
@@ -71,12 +76,9 @@ div#wm-footer{
                         }
                     }
                     #subscribe-submit{
-                        display: flex;
-                        align-content: center;
-                        align-items: stretch;
-                        align-content: stretch;
+                        
                         .wp-block-button__link{
-                            align-self: stretch;
+                 
                             text-align: center;
                             font-size: 1.6rem;
                             color: $black;
@@ -90,16 +92,7 @@ div#wm-footer{
                             margin-left:0px !important;
                             padding: 10px 30px !important;
                         
-                        }
-       
-                       
-                          
-                    }
-                    @media (min-width:768px) {
-                        #subscribe-submit{
-                            max-width: 30% !important;
-                            width:30% !important;
-                        }
+                        }                          
                     }
                 }
             }
@@ -116,14 +109,27 @@ div#wm-footer{
           
         }
 
-        div.wp-container-40{
+        div.wm-custom-copy{
             align-items: center;
-            gap: 10px;
             align-self: center;
             padding: 0px;
             margin: 0 auto;
+            .wp-block-column:nth-child(odd){
+                flex-basis:15% !important;
+            }
+            .wp-block-column:nth-child(even){
+                justify-content: flex-start;
+                font-weight: 700;
+                font-size: 2.3rem;
+                letter-spacing: 1px;
+            }
             .wp-block-image{
                 margin: 0;
+                visibility: hidden;
+                .wp-image-206{
+                    width:0%
+                    
+                }
             }
         }
 
@@ -187,23 +193,135 @@ div#wm-footer{
 
 footer{
 
-        .privacy-policy, .powered-by-wordpress,  .to-the-top{
-           
+        .privacy-policy, .powered-by-wordpress,  .to-the-top{        
                 color: $white;
         }
 
-        .to-the-top-long {
-
-            .arrow{
-                background-color: $yellow;
-                color: $black;
-                border-radius: 50%;
-            }
-           
-        }
+    .arrow{
+            background-color: $yellow;
+            color: $black;
+            border-radius: 50%;
+            width: 20px;
+            display: inline-block;
+            text-align: center;       
+    }
   
+}
+.footer-copyright{
+    visibility: hidden;
+    width: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 
+#menu-wm-footer{
+    text-align: center !important;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin: 20px auto;
+    .menu-item{       
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 1.6rem; 
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            a{
+                font-family: $font-wordcamp !important;
+                color: $white;
+                
+            }
 
+            a:hover{
+                color: $red;
+            }
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:1024px){
+    #subscribe-submit{
+        max-width: 100% !important;
+        width:100vw !important;
+
+    }
+
+    div.wp-container-37{
+        min-height: auto;
+        padding: 6rem;
+    }
+    div.wp-container-40{
+        gap: 10px;
+        padding: 0px;
+        justify-content: space-around;
+        margin: 0 auto;
+        .wp-block-column:nth-child(odd){
+            display: flex;
+            justify-content: flex-end;
+            flex-basis:20% !important;
+            .wp-block-image{
+                justify-content: flex-end;
+                margin: 0;
+                visibility: visible;
+                .wp-image-206{
+                    width:5rem;
+                    aspect-ratio: 1/1;
+                    align-self: center
+                }
+            }
+        }
+        .wp-block-column:nth-child(even){
+            display: flex;
+            justify-content: flex-start;
+            font-weight: 700;
+            font-size: 2.3rem;
+            letter-spacing: 1px;
+        }
+        
+    }
+
+    @include footer-menu-wide();
+
+}
+
+@media screen and (min-width:1024px) {
+    #subscribe-submit{
+        max-width: 30% !important;
+        width:30% !important;
+    }
+    div.wp-container-37{
+        min-height: auto;
+        padding: 6rem;
+    }
+
+    div.wp-container-40{
+        .wp-block-column:nth-child(odd){
+            display: flex;
+            justify-content: flex-end;
+            
+            .wp-block-image{
+                justify-content: flex-end;
+                margin: 0;
+                visibility: visible;
+                .wp-image-206{
+                    width:5rem;
+                    aspect-ratio: 1/1;
+                    align-self: center
+                }
+            }
+        }
+        .wp-block-column:nth-child(even){
+            display: flex;
+            justify-content: flex-start;
+            font-weight: 700;
+            font-size: 2.3rem;
+            letter-spacing: 1px;
+        }
+    }
+   @include footer-menu-wide();
+}
 
