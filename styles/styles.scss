@@ -6,6 +6,12 @@
 
 @import "vars/global.scss";
 
+/* import pages */
+
+@import "pages/home.scss";
+
+@import "pages/organizers.scss";
+
 /* import components */
 
 @import "components/header.scss";
@@ -17,9 +23,3 @@
 /* @import "components/community-section.scss"; */
 
 @import "components/footer.scss";
-
-/* import pages */
-
-@import "pages/home.scss";
-
-@import "pages/organizers.scss";
