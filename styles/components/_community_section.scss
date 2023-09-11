@@ -1,174 +1,151 @@
-#wm-cta-gallery{
-	background-color: #FBFBFB;
-	padding-top: 20px;
-	padding-bottom: 0px;
-	display: flex;
-	overflow: hidden;
-	
-	.wp-block-group__inner-container{
+#wm-community-sec{
+	background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 90px;
 
-		.wm-big-card{
-			display: none;
+  .wm-community-content{
+	  display: flex;
+	  background-color: $light-blue;
+	  max-width: 1323px;
+	  position:relative;
+	  margin: 40px 0;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: space-between;
+
+	  .wm-community-sec-bn{
+		  position: relative;
+		  bottom: 20px;
+		  order: 3;
+		  display: block;
+		  margin: 0 auto;
+
+		  a{
+			  background-color: $yellow;
+			  border-radius: 100px;
+			  color: $black;
+			  font-size: 16px;
+			  font-weight: 600;
+			  line-height: 20px;
+			  letter-spacing: 1px;
+			  text-transform: capitalize;
+		  }
+	  }
+
+	  figure{
+		  margin: 0px;
+		  order: 1;
+	  }
+
+	  p{
+		  font-size: 18px;
+		  font-weight: 600;
+		  line-height: 23px;
+		  color: $black;
+		  max-width: 500px;
+		  margin-bottom: 40px;
+		  order:2;
+		  text-align: center;
+		  margin-top: 50px;
+	  }
+  }
+
+  &:after{
+	  content: 'Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate';
+	  font-size: 18px;
+	  font-weight: 600;
+	  line-height: 25px;
+	  letter-spacing: 1px;
+	  color: $black;
+	  transform: none;
+	  background-color: $white;
+	  position: absolute;
+	  width: 300%;
+	  top: 40px;
+	  z-index: 2;
+	  padding:10px 0;
+	  left: -40px;
+  }
+
+  &:before{
+	  content: 'WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua';
+	  font-size: 18px;
+	  font-weight: 600;
+	  line-height: 25px;
+	  letter-spacing: 1px;
+	  color: $yellow;
+	  background-color: $red;
+	  transform: none;
+	  position: absolute;
+	  width: 800%;
+	  top: 0px;
+	  z-index: 1;
+	  padding: 10px 0;
+	  left: -30px;
+  }
+}
+
+@media(min-width: 768px){
+	#wm-community-sec{
+		.wm-community-content{
+			max-width: 548px;
 		}
-
-		
-		.wm-row-small-cards{
-			max-width: 100% !important;
-			min-width: 100% !important;
-			padding-left: 0px;
-			padding-right: 0px;
-			margin: 0px;
-			gap: 10px;
-			display: block;
-
-
-			.wm-small-card{
-				position: relative;
-				.wp-block-group.is-layout-constrained.wp-block-group-is-layout-constrained{
-					margin-top: 10px;
-					.wp-block-group__inner-container{
-						width: 400px;
-						.wp-block-cover.has-background-color.has-text-color.has-link-color{
-							height: 300px;
-							margin-top: 0px;
-							margin-bottom: 10px;
-							.wp-block-cover__inner-container.is-layout-constrained.wp-block-cover-is-layout-constrained{
-								position: absolute;
-								bottom: 100px;
-								left: 50px;
-								right: auto;
-								p{
-									color: white;
-									display: block;
-									font-size: 35px;
-									line-height: 40px;
-									letter-spacing: 1px;
-									height: 35px;
-									text-align: left;
-								}
-							}
-						
-						}
-					}
-				}
-				p{
-					position: absolute;
-					bottom: 0px;
-					width: 100%;
-					height: 80px;
-					z-index: 1;
-					display: flex;
-					flex-direction: row;
-				    align-items: center;
-				    justify-content: flex-start;
-
-					&.bg-red{
-						background-color: $red;
-						padding-left: 50px;
-						&:before{
-							background-image: url("https://managua.wordcamp.org/2023/files/2023/09/arrow_icon.png");
-							background-size: contain;
-							height:30px;
-							width: 30px;
-							content: '';
-							margin-right: 10px;
-						}
-					}
-
-					&.bg-yellow{
-						background-color: $yellow;
-						padding-left: 50px;
-						&:before{
-							background-image: url("https://managua.wordcamp.org/2023/files/2023/09/arrow_icon.png");
-							background-size: contain;
-							height:30px;
-							width: 30px;
-							content: '';
-							margin-right: 10px;
-						}
-					}
-
-					&.bg-blue{
-						background-color: $light-blue;
-						padding-left: 50px;
-						&:before{
-							background-image: url("https://managua.wordcamp.org/2023/files/2023/09/arrow_icon.png");
-							background-size: contain;
-							height:30px;
-							width: 30px;
-							content: '';
-							margin-right: 10px;
-						}
-					}
-
-					a{
-						color: black;
-						text-decoration: none;
-						font-size: 20px;
-						line-height: 25px;
-						letter-spacing: 1px;
-					}
-
-
-				}
-
-			}
-
-		}
-
 	}
 }
 
-
 @media(min-width: 1400px){
-
-	#wm-cta-gallery{
-		padding-bottom: 55px;
-
-		.wp-block-group__inner-container{
-
-			.wm-big-card{
-		        width: 1369px;
-		        height: 570px;
-		        min-width: 1369px;
-		        min-height: 570px;
-		        position: relative;
-		        overflow: hidden;
-		        margin-bottom: 0px;
-		        display: block;
-
-		        img{
-		            position: absolute;
-		            object-fit: cover;
-		            width: 100%;
-		            height: auto;
-		            object-position: center;
-		        }
-		    }
-
-		    .wm-row-small-cards{
-		        max-width: 1369px !important;
-		        min-width: 1369px !important;
-		        display: inline-flex;
-
-
-		        .wm-small-card{
-		            .wp-block-group.is-layout-constrained.wp-block-group-is-layout-constrained{
-		                .wp-block-group__inner-container{
-		                    width: 100%;
-		                    .wp-block-cover.has-background-color.has-text-color.has-link-color{
-		                        .wp-block-cover__inner-container.is-layout-constrained.wp-block-cover-is-layout-constrained{
-		                            bottom: 80px;
-		                        }
-		                    
-		                    }
-		                }
-		            }
-		        }
-
-		    }  
+	#wm-community-sec{
+		padding-top: 0px;
+	
+		.wm-community-content{
+			max-width: 1323px;
+			padding: 100px;
+			margin: 140px;
+			flex-direction: row;
+			align-items: flex-end;
+			justify-content: space-between;
+	
+			.wm-community-sec-bn{
+				position: absolute;
+				bottom: 100px;
+			}
+	
+			p{
+				font-size: 45px;
+				line-height: 50px; 
+				letter-spacing: 1px;
+				margin-bottom: 80px;
+				margin-top: 0px;
+				text-align: left;
+				order: 1;
+			}
 		}
-
+	
+		&:after{
+			font-size: 70px;
+			font-weight: 700;
+			line-height: 75px;
+			letter-spacing: 1px;
+			transform: rotate(1.032deg);
+			top: 267px;
+			z-index: 2;
+			padding:10px 0;
+		}
+	
+		&:before{
+			font-size: 35px;
+			font-weight: 500;
+			line-height: 40px; 
+			letter-spacing: 1px;
+			transform: rotate(-1.555deg);
+			width: 300%;
+			top: 270px;
+			z-index: 1;
+			padding: 5px 0;
+		}
 	}
- 
 }
