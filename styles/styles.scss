@@ -3,19 +3,19 @@
 /* import globals */
 
 @import "vars/vars.scss";
-
 @import "vars/global.scss";
 
 /* import pages */
-
 @import "pages/home.scss";
-
 @import "pages/organizers.scss";
 
+
 /* import components */
-
 @import "components/header.scss";
-
-@import "components/community-picture";
-
 @import "components/footer.scss";
+
+/* import home components */
+@import "components/community-picture";
+@import "components/cta-gallery.scss";
+@import "components/community_section.scss";
+
