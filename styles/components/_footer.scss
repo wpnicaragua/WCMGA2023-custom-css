@@ -266,7 +266,7 @@ footer{
             .wp-block-image{
                 justify-content: flex-end;
                 margin: 0;
-                visibility: visible;
+                visibility: visible !important; 
                 .wp-image-206{
                     width:5rem;
                     aspect-ratio: 1/1;
@@ -302,11 +302,11 @@ footer{
         .wp-block-column:nth-child(odd){
             display: flex;
             justify-content: flex-end;
-            
+            flex-basis:25% !important;
             .wp-block-image{
                 justify-content: flex-end;
                 margin: 0;
-                visibility: visible;
+                visibility: visible !important;
                 .wp-image-206{
                     width:5rem;
                     aspect-ratio: 1/1;
