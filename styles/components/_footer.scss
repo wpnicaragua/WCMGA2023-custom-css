@@ -253,11 +253,11 @@ footer{
 
     }
 
-    div.wp-container-37{
+    div.wm-newsletter{
         min-height: auto;
         padding: 6rem;
     }
-    div.wp-container-40{
+    div.wm-custom-copy{
         gap: 10px;
         padding: 0px;
         justify-content: space-around;
@@ -269,7 +269,7 @@ footer{
             .wp-block-image{
                 justify-content: flex-end;
                 margin: 0;
-                visibility: visible;
+                visibility: visible !important; 
                 .wp-image-206{
                     width:5rem;
                     aspect-ratio: 1/1;
@@ -296,20 +296,20 @@ footer{
         max-width: 30% !important;
         width:30% !important;
     }
-    div.wp-container-37{
+    div.wm-newsletter{
         min-height: auto;
         padding: 6rem;
     }
 
-    div.wp-container-40{
+    div.wm-custom-copy{
         .wp-block-column:nth-child(odd){
             display: flex;
             justify-content: flex-end;
-            
+            flex-basis:25% !important;
             .wp-block-image{
                 justify-content: flex-end;
                 margin: 0;
-                visibility: visible;
+                visibility: visible !important;
                 .wp-image-206{
                     width:5rem;
                     aspect-ratio: 1/1;
