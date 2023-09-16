@@ -1,4 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
 --root{
     font-size: $initial-font-weight;
     font-family: $font-wordcamp;
 }
+
+.entry-content{
+    font-family: $font-wordcamp!important;
+}
+
+
+

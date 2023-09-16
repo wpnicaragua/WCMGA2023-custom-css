@@ -1,0 +1,154 @@
+#wm-community-sec{
+	background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 90px;
+
+  .wm-community-content{
+	  display: flex;
+	  background-color: $light-blue;
+	  max-width: 1323px;
+	  position:relative;
+	  margin: 40px 0;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: space-between;
+
+	  .wm-community-sec-bn{
+		  position: relative;
+		  bottom: 20px;
+		  order: 3;
+		  display: block;
+		  margin: 0 auto;
+
+		  a{
+			  background-color: $yellow;
+			  border-radius: 100px;
+			  color: $black;
+			  font-size: 16px;
+			  font-weight: 600;
+			  line-height: 20px;
+			  letter-spacing: 1px;
+			  text-transform: capitalize;
+		  }
+	  }
+
+	  figure{
+		  margin: 0px;
+		  order: 1;
+	  }
+
+	  p{
+		  font-size: 18px;
+		  font-weight: 600;
+		  line-height: 23px;
+		  color: $black;
+		  max-width: 500px;
+		  margin-bottom: 40px;
+		  order:2;
+		  text-align: center;
+		  margin-top: 50px;
+	  }
+  }
+
+  &:after{
+	  content: 'Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate Sumate';
+	  font-size: 18px;
+	  font-weight: 600;
+	  line-height: 25px;
+	  letter-spacing: 1px;
+	  color: $black;
+	  transform: none;
+	  background-color: $white;
+	  position: absolute;
+	  width: 300%;
+	  top: 40px;
+	  z-index: 2;
+	  padding:10px 0;
+	  left: -40px;
+  }
+
+  &:before{
+	  content: 'WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua WordPress Nicaragua';
+	  font-size: 18px;
+	  font-weight: 600;
+	  line-height: 25px;
+	  letter-spacing: 1px;
+	  color: $yellow;
+	  background-color: $red;
+	  transform: none;
+	  position: absolute;
+	  width: 800%;
+	  top: 0px;
+	  z-index: 1;
+	  padding: 10px 0;
+	  left: -30px;
+  }
+}
+
+@media(min-width: 768px){
+	#wm-community-sec{
+		.wm-community-content{
+			max-width: 548px;
+		}
+	}
+}
+
+@media(min-width: 1400px){
+	#wm-community-sec{
+		padding-top: 0px;
+	
+		.wm-community-content{
+			max-width: 1323px;
+			padding: 100px;
+			margin: 140px;
+			flex-direction: row;
+			align-items: flex-end;
+			justify-content: space-between;
+	
+			.wm-community-sec-bn{
+				position: absolute;
+				bottom: 100px;
+			}
+	
+			p{
+				font-size: 45px;
+				line-height: 50px; 
+				letter-spacing: 1px;
+				margin-bottom: 80px;
+				margin-top: 0px;
+				text-align: left;
+				order: 1;
+			}
+		}
+	
+		&:after{
+			font-size: 70px;
+			font-weight: 700;
+			line-height: 75px;
+			letter-spacing: 1px;
+			transform: rotate(1.032deg);
+			top: 267px;
+			z-index: 2;
+			padding:10px 0;
+			width: 500%;
+		}
+	
+		&:before{
+			font-size: 35px;
+			font-weight: 500;
+			line-height: 40px; 
+			letter-spacing: 1px;
+			transform: rotate(-1.555deg);
+			width: 400%;
+			left: -20px;
+			top: 270px;
+			z-index: 1;
+			padding: 5px 0;
+			width: 500%;
+		}
+	}
+}
