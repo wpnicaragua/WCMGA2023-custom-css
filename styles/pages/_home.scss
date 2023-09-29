@@ -1,0 +1,30 @@
+
+.page-slug-home{
+
+
+    .header.entry-header.has-text-align-center.header-footer-group {
+        display: none;
+    }
+
+    .wp-block-button{
+
+          position: relative;
+          bottom: 20px;
+          display: block;
+          margin: 0 auto;
+          margin-top: 20px;
+
+          a{
+              background-color: $yellow;
+              border-radius: 100px;
+              color: $black;
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 20px;
+              letter-spacing: 1px;
+              text-transform: capitalize;
+              text-decoration: none;
+          }
+        }
+ 
+}
