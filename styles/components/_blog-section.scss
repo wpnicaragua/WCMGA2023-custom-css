@@ -1,0 +1,20 @@
+#wm-community-blog{
+	max-width: 100%!important;
+	width: calc(100% - 4rem);
+
+	.wp-block-latest-posts__featured-image{
+		border-bottom: 0.5rem solid $red;
+		width: 100%;
+		max-width: 100%;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	.wp-block-latest-posts.is-grid li {
+    	border-top-color: transparent;
+    	background-color: $gray;
+    	padding: 2rem;
+    	display: flex;
+    	flex-direction: column;
+	}
+}
