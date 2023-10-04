@@ -12,6 +12,42 @@
     }
 }
 
+@mixin footer-copyright-wide(){
+    div.wm-custom-copy{
+        gap: 10px;
+        padding: 0px;
+        justify-content: space-around;
+        margin: 0 auto;
+        .wp-block-column:nth-child(odd){
+            display: flex;
+            justify-content: flex-end;
+            flex-basis:20% !important;
+            .wp-block-image{
+                justify-content: flex-end;
+                margin: 0;
+                visibility: visible !important; 
+                .wp-image-206{
+                    width:5rem;
+                    aspect-ratio: 1/1;
+                    align-self: center
+                }
+            }
+        }
+        .wp-block-column:nth-child(even){
+            display: flex;
+            flex-basis: 75% !important;
+            justify-content: flex-start;
+            flex-basis: 80%;
+            font-weight: 700;
+            font-size: 2.3rem;
+            letter-spacing: 1px;
+        }
+        
+    }
+
+
+}
+
 .header-footer-group {
 
     background-color: $black !important;
@@ -58,44 +94,52 @@ div#wm-footer{
             .wp-block-jetpack-subscriptions__container{
        
                 #subscribe-blog-1{
-                    align-items: stretch;
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    gap: 5px;
-                    #subscribe-email{
-
-                       margin: 0;
-                        input[type="email"]{
-                            font-size: 1.8rem;
-                            font-weight: 400;
-                            color: $black;
-                            line-height:2.8rem;
-                            letter-spacing: 1px;
-                            border-radius: 100px !important;
+                    justify-content: center;
+                    .wp-block-jetpack-subscriptions__form-elements{
+                        
+                        align-items: stretch;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        gap: 5px;
+                        #subscribe-email{
+                        margin: 0;
+                            input[type="email"]{
+                                font-size: 1.8rem;
+                                font-weight: 400;
+                                color: $black;
+                                line-height:2.8rem;
+                                letter-spacing: 1px;
+                                border-radius: 100px !important;
+                                flex-basis: 100%;
+                            }
+                        }
+                        #subscribe-submit{
+                            display: flex;
+                            gap: 5px;
+                            width: 70vw !important;
+                            .wp-block-button__link{
+                    
+                                text-align: center;
+                                font-size: 1.6rem;
+                                color: $black;
+                                font-style: normal;
+  
+                                background-color: $yellow;
+                                font-weight: 600;
+                                line-height: 20px;
+                                letter-spacing: 1px;
+                                text-transform: capitalize;
+                                border-radius: 100px !important;
+                                margin-left:0px !important;
+                                padding: 10px 30px !important;
+                                
+                        
+                         }                          
                         }
                     }
-                    #subscribe-submit{
-                        
-                        .wp-block-button__link{
-                 
-                            text-align: center;
-                            font-size: 1.6rem;
-                            color: $black;
-                            font-style: normal;
-                            background-color: $yellow;
-                            font-weight: 600;
-                            line-height: 20px;
-                            letter-spacing: 1px;
-                            text-transform: capitalize;
-                            border-radius: 100px !important;
-                            margin-left:0px !important;
-                            padding: 10px 30px !important;
-                        
-                        }                          
-                    }
                 }
-            }
+            } 
         }
 
         .wp-block-image{
@@ -115,13 +159,17 @@ div#wm-footer{
             padding: 0px;
             margin: 0 auto;
             .wp-block-column:nth-child(odd){
-                flex-basis:15% !important;
+                flex-basis:0%;
+                display: none;
             }
             .wp-block-column:nth-child(even){
-                justify-content: flex-start;
+                display: flex;
+                justify-content: center;
+                flex-basis: 100% !important;
                 font-weight: 700;
                 font-size: 2.3rem;
                 letter-spacing: 1px;
+                text-align: center;
             }
             .wp-block-image{
                 margin: 0;
@@ -245,84 +293,51 @@ footer{
 }
 
 @media screen and (min-width: 375px) and (max-width:1024px){
-    #subscribe-submit{
-        max-width: 100% !important;
-        width:100vw !important;
 
-    }
+    div#wm-footer{
+    
+        div.wp-block-group__inner-container{
+            
 
-    div.wm-newsletter{
-        min-height: auto;
-        padding: 6rem;
-    }
-    div.wm-custom-copy{
-        gap: 10px;
-        padding: 0px;
-        justify-content: space-around;
-        margin: 0 auto;
-        .wp-block-column:nth-child(odd){
-            display: flex;
-            justify-content: flex-end;
-            flex-basis:20% !important;
-            .wp-block-image{
-                justify-content: flex-end;
-                margin: 0;
-                visibility: visible !important; 
-                .wp-image-206{
-                    width:5rem;
-                    aspect-ratio: 1/1;
-                    align-self: center
+            div.wm-newsletter{
+                min-height: auto;
+                padding: 6rem;
+                    #subscribe-submit{
+                    max-width: 100% !important;
+                    width:100vw !important;
                 }
             }
-        }
-        .wp-block-column:nth-child(even){
-            display: flex;
-            justify-content: flex-start;
-            font-weight: 700;
-            font-size: 2.3rem;
-            letter-spacing: 1px;
-        }
-        
-    }
 
-    @include footer-menu-wide();
+            @include footer-copyright-wide();
+
+            @include footer-menu-wide();
+        }
+    }
 
 }
 
 @media screen and (min-width:1024px) {
-    #subscribe-submit{
-        max-width: 30% !important;
-        width:30% !important;
-    }
-    div.wm-newsletter{
-        min-height: auto;
-        padding: 6rem;
-    }
 
-    div.wm-custom-copy{
-        .wp-block-column:nth-child(odd){
-            display: flex;
-            justify-content: flex-end;
-            flex-basis:25% !important;
-            .wp-block-image{
-                justify-content: flex-end;
-                margin: 0;
-                visibility: visible !important;
-                .wp-image-206{
-                    width:5rem;
-                    aspect-ratio: 1/1;
-                    align-self: center
+    div#wm-footer{
+        div.wp-block-group__inner-container{
+  
+            div.wm-newsletter{
+                min-height: auto;
+                padding: 6rem;
+                #subscribe-email{
+                    max-width: 65% !important;
+                }
+                #subscribe-submit{
+                    max-width: 30% !important;
+                    width:30% !important;
                 }
             }
-        }
-        .wp-block-column:nth-child(even){
-            display: flex;
-            justify-content: flex-start;
-            font-weight: 700;
-            font-size: 2.3rem;
-            letter-spacing: 1px;
-        }
-    }
-   @include footer-menu-wide();
+
+
+             @include footer-copyright-wide();
+             @include footer-menu-wide();
+
+         }
+    }   
 }
 
