@@ -342,13 +342,16 @@
 			}
 		}
 
+
 		.sponsors-section-small{
 			grid-template-columns: repeat(4, 1fr);
 
-			&.momotombito{
+			&-momotombito{
 				grid-template-columns: repeat(3, 1fr);
+				max-width: 992px;
 			}
 		}
+
 
 	}
 }
