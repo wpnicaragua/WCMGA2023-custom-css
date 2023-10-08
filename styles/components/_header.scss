@@ -53,3 +53,46 @@ header#site-header{
 		}
 	}
 }
+
+header{
+	.header-inner{
+		.search-toggle{
+			.toggle-text{
+				display: none;
+			}
+			svg{
+				color: white;
+			}
+		}
+
+		.nav-toggle{
+			.toggle-text{
+				display: none;
+			}
+			svg{
+				color: white;
+			}
+		}
+	}
+}
+
+.mobile-menu{
+	.modal-menu{
+		.sub-menu{
+			.menu-item{
+				div{
+					a{
+						color: #cd2653;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media(min-width: 768px){
+	.header-toggles.hide-no-js{
+		display: none;
+	}
+}
