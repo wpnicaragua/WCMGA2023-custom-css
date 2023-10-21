@@ -1,0 +1,45 @@
+.wm-organizer-list{
+    ul{
+        li{
+            background-color: #F1F1F1;
+            padding-top: 20px;
+            padding-bottom: 25px;
+
+            figure{
+                position: relative;
+
+                &::before{
+                    content: '';
+                    background-image: url('https://managua.wordcamp.org/2023/files/2023/10/WC_textures_black_2.png');
+                    background-size: 130px;
+                    position: absolute;
+                   width: 130px;
+                   height: 130px;
+                   top: calc(50% - 65px);
+                    left: calc(50% - 65px);
+                }
+
+                img{
+                    border: 1.5px solid #FFDA00;
+                }
+
+            }
+            h2{
+                margin-top: 0;
+                a{
+                    color: #141414;
+                    text-align: center;
+                    font-size: 23px;
+                    font-weight: 600;
+                    line-height: 28px; /* 121.739% */
+                    letter-spacing: 1px;
+                    text-decoration: none;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

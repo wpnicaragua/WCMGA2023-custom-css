@@ -141,10 +141,11 @@
 				line-height: 75px;
 				letter-spacing: 1px;
 				transform: rotate(1.032deg);
-				top: 267px;
+				top: 200px;
 				z-index: 2;
 				padding:10px 0;
-				width: 500%;
+				width: 5000px;
+				left: -300px;
 			}
 		
 			&:before{
@@ -153,12 +154,11 @@
 				line-height: 40px; 
 				letter-spacing: 1px;
 				transform: rotate(-1.555deg);
-				width: 400%;
-				left: -20px;
-				top: 270px;
+				width: 6250px;
+				left: auto;
+				top: 215px;
 				z-index: 1;
 				padding: 5px 0;
-				width: 500%;
 			}
 		}
 	}
